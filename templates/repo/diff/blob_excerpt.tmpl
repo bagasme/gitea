@@ -19,7 +19,7 @@
 					</a>
 				{{end}}
 			</td>
-			<td colspan="5" class="lines-code lines-code-old "><span class="mono wrap">{{$.section.GetComputedInlineDiffFor $line}}</span></td>
+			<td colspan="5" class="lines-code lines-code-old "><span class="mono wrap px-3">{{$.section.GetComputedInlineDiffFor $line}}</span></td>
 		{{else}}
 			<td class="lines-num lines-num-old" data-line-num="{{if $line.LeftIdx}}{{$line.LeftIdx}}{{end}}"><span rel="{{if $line.LeftIdx}}diff-{{Sha1 $.fileName}}L{{$line.LeftIdx}}{{end}}"></span></td>
 			<td class="blob-excerpt lines-type-marker lines-type-marker-old">{{if $line.LeftIdx}}<span class="mono" data-type-marker=""></span>{{end}}</td>
